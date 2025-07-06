@@ -89,10 +89,7 @@ h5 {
   justify-content: space-between;
   position: fixed;
   z-index: 20;
-  box-shadow:
-    0 1px 10px rgba(0, 0, 0, 0.07),
-    0 2px 10px rgba(0, 0, 0, 0.07),
-    0 3px 10px rgba(0, 0, 0, 0.07);
+  box-shadow: none;
 }
 
 .navbar-option a {
@@ -122,10 +119,11 @@ h5 {
 
 /* Hamburger icon */
 .hamburger {
-  width: 30px;
-  height: 22px;
+  width: 24px;
+  height: 18px;
   position: relative;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .hamburger span {
@@ -141,7 +139,7 @@ h5 {
 }
 
 .hamburger span:nth-child(2) {
-  top: 9px;
+  top: 7px;
 }
 
 .hamburger span:nth-child(3) {
@@ -150,7 +148,7 @@ h5 {
 
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg);
-  top: 9px;
+  top: 7px;
 }
 
 .hamburger.active span:nth-child(2) {
@@ -159,7 +157,7 @@ h5 {
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg);
-  bottom: 9px;
+  bottom: 7px;
 }
 
 /* Mobile menu */
