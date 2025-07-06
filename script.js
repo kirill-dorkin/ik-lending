@@ -7,6 +7,16 @@ function hamburgerClick() {
 }
 
 window.addEventListener("DOMContentLoaded", function () {
+  const burger = document.querySelector(".hamburger");
+  const menu = document.getElementById("mobile-menu");
+
+  document.querySelectorAll("#mobile-menu a").forEach((link) => {
+    link.addEventListener("click", function () {
+      burger.classList.remove("active");
+      menu.classList.remove("open");
+    });
+  });
+
   const reviews = document.querySelectorAll(".review");
   let currentReview = 0;
 
