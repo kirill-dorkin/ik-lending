@@ -1,363 +1,403 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <title>Issyk-Kul Camp - Лучшие палатки на берегу озера</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <title>Issyk-Kul Camp - Лучшие палатки на берегу озера</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add icon logo -->
+    <link rel="icon" href="img/rayalpark.png" />
 
-  <!-- Add icon logo -->
-  <link rel="icon" href="img/rayalpark.png" />
+    <!-- Add necessary file and cdn -->
+    <link rel="stylesheet" href="style/stylesheet.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/18cbcebdd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </head>
 
-  <!-- Add necessary file and cdn -->
-  <link rel="stylesheet" href="style/stylesheet.css" />
-  <link rel="stylesheet" href="style/responsive.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <script src="https://kit.fontawesome.com/18cbcebdd2.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
-</head>
-
-<body>
-  <!-- Navbar and main section -->
-  <div class="main-section" id="main-section">
-    <div class="navbar" id="navbar">
-      <div class="left-navbar" id="left-navbar">
-        <div class="logo">
-          <a href="#">IK Camp</a>
+  <body>
+    <!-- Navbar and main section -->
+    <div class="main-section" id="main-section">
+      <div class="navbar" id="navbar">
+        <div class="left-navbar" id="left-navbar">
+          <div class="logo">
+            <a href="#">IK Camp</a>
+          </div>
+          <div class="navbar-option" id="navbar-option">
+            <a href="#main-section">Главная</a>
+            <a href="#about-section">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#pricing">Цены</a>
+            <a href="#blog-and-news">Блог</a>
+          </div>
         </div>
-        <div class="navbar-option" id="navbar-option">
-          <a href="#main-section">Главная</a>
-          <a href="#about-section">О нас</a>
-          <a href="#services">Услуги</a>
-          <a href="#pricing">Цены</a>
-          <a href="#blog-and-news">Блог</a>
-        </div>
-      </div>
-      <div class="right-navbar">
-        <a href="#" class="bookNow">ЗАБРОНИРОВАТЬ</a>
-        <a href="javascript:void(0);" class="hamburger" onclick="hamburgerClick()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-    <div class="main-contents">
-      <div class="main-text">
-        <div class="container-main">
-          <h1>Отдохните однажды и вспоминайте всегда!</h1>
-          <p class="main">
-            Насладитесь природой Кыргызстана, ночуя в уютных палатках у берегов Иссык-Куля.
-            Мы предлагаем комфортное размещение и незабываемые впечатления.
-          </p>
-        </div>
-      </div>
-      <div class="main-image"></div>
-    </div>
-  </div>
-
-  <!-- Company description section -->
-  <div class="about-section" id="about-section">
-    <div class="container">
-      <div class="about-contents">
-        <div class="image-about" data-aos="fade-up">
-          <img src="img/resort.jpg" alt="image" />
-        </div>
-        <div class="box-about" data-aos="fade-down">
-          <div class="box-contents">
-            <h2>Мы стараемся для вас!</h2>
-            <p>
-              Наш кемпинг у озера Иссык-Куль предлагает чистый горный воздух и прекрасные виды.
-            </p>
-            <h5>Удобства и уют</h5>
-            <p>
-              Каждая палатка оборудована всем необходимым для комфортного отдыха.
-            </p>
-            <div class="continue-button">
-              <a href="#">Подробнее →</a>
-            </div>
+        <div class="right-navbar">
+          <a href="#" class="bookNow">ЗАБРОНИРОВАТЬ</a>
+          <div class="hamburger" onclick="hamburgerClick()">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Services section -->
-  <div class="our-services" id="services">
-    <div class="container">
-      <div class="services-contents">
-        <div class="box-description" data-aos="fade-up">
-          <h2>Наши услуги</h2>
-          <p>
-            Мы позаботились о том, чтобы ваше пребывание было комфортным.
-          </p>
-          <div class="services">
-            <div class="services-icon">
-              <h4>
-                <span class="fa fa-cutlery orange" aria-hidden="true"></span>Домашняя кухня
-              </h4>
-            </div>
-            <div class="services-icon">
-              <h4>
-                <span class="fa fa-lock blue" aria-hidden="true"></span>Безопасность
-              </h4>
-            </div>
-            <div class="services-icon">
-              <h4>
-                <span class="fa fa-clock-o green" aria-hidden="true"></span>Быстрый сервис
-              </h4>
-            </div>
-            <div class="services-icon">
-              <h4>
-                <span class="fa fa-hourglass-o purple" aria-hidden="true"></span>24/7 поддержка
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="image-services" data-aos="fade-up">
-          <img src="img/services.jpg" alt="" />
-        </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#main-section">Главная</a>
+        <a href="#about-section">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#pricing">Цены</a>
+        <a href="#blog-and-news">Блог</a>
       </div>
-    </div>
-  </div>
-
-  <!-- Pricing section -->
-  <div class="best-plans" id="pricing" data-aos="fade-up">
-    <div class="container">
-      <div class="heading-blog">
-        <h2>Цены на аренду палаток</h2>
-        <div class="blog-container">
-          <p>
-            Выберите подходящую палатку для вашего отдыха.
-          </p>
-        </div>
-      </div>
-      <div class="plan-contents">
-        <div class="plan-card" data-aos="fade-down">
-          <img src="img/classic-room-cropped.jpg" alt="single tent" />
-          <div class="plan-content">
-            <h4>Одноместная палатка</h4>
-            <div class="price">
-              <p><span>500 сом</span> за ночь</p>
-            </div>
-            <div class="features">
-              <p>Бесплатный WiFi</p>
-              <p>Завтрак включён</p>
-              <p>1 спальное место</p>
-              <p>Для 1 гостя</p>
-            </div>
-            <div class="select-package">
-              <a href="#">Выбрать</a>
-            </div>
-          </div>
-        </div>
-        <div class="plan-card" data-aos="fade-up">
-          <img src="img/luxury-room-cropped.jpg" alt="double tent" />
-          <div class="plan-content">
-            <h4>Двухместная палатка</h4>
-            <div class="price">
-              <p><span>800 сом</span> за ночь</p>
-            </div>
-            <div class="features">
-              <p>Бесплатный WiFi</p>
-              <p>Завтрак включён</p>
-              <p>2 спальных места</p>
-              <p>Для 2 гостей</p>
-            </div>
-            <div class="select-package">
-              <a href="#">Выбрать</a>
-            </div>
-          </div>
-        </div>
-        <div class="plan-card" data-aos="fade-up">
-          <img src="img/modern-room-cropped.jpg" alt="family tent" />
-          <div class="plan-content">
-            <h4>Семейная палатка</h4>
-            <div class="price">
-              <p><span>1200 сом</span> за ночь</p>
-            </div>
-            <div class="features">
-              <p>Бесплатный WiFi</p>
-              <p>Завтрак включён</p>
-              <p>4 спальных места</p>
-              <p>Для семьи до 4 человек</p>
-            </div>
-            <div class="select-package">
-              <a href="#">Выбрать</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Blog and news section -->
-  <div class="blog-and-news" id="blog-and-news">
-    <div class="container">
-      <div class="heading-blog" data-aos="fade-up">
-        <h2>Наши новости</h2>
-        <div class="blog-container">
-          <p>
-            Следите за событиями нашего кемпинга и полезными советами по отдыху.
-          </p>
-        </div>
-      </div>
-      <div class="blog-contents">
-        <div class="blog" data-aos="fade-down">
-          <img src="img/resort.jpg" alt="resort picture" />
-          <div class="blog-info">
-            <div class="time-posted">
-              <div class="rounded">
-                <span class="fa fa-calendar" aria-hidden="true"></span>
-              </div>
-              <h4>17-06-2025</h4>
-            </div>
-            <div class="blog-author">
-              <div class="rounded">
-                <span class="fa fa-user" aria-hidden="true"></span>
-              </div>
-              <h4>Администратор</h4>
-            </div>
-          </div>
-          <div class="blog-content">
-            <h4>Лучшие места отдыха на Иссык-Куле!</h4>
-            <p>
-              Мы собрали список самых живописных уголков побережья для вашего незабываемого отдыха.
+      <div class="main-contents">
+        <div class="main-text">
+          <div class="container-main">
+            <h1>Отдохните однажды и вспоминайте всегда!</h1>
+            <p class="main">
+              Насладитесь природой Кыргызстана, ночуя в уютных палатках у
+              берегов Иссык-Куля. Мы предлагаем комфортное размещение и
+              незабываемые впечатления.
             </p>
           </div>
         </div>
-        <div class="blog second" data-aos="fade-up">
-          <img src="img/villa.jpg" alt="villa picture" />
-          <div class="blog-info">
-            <div class="time-posted">
-              <div class="rounded">
-                <span class="fa fa-calendar" aria-hidden="true"></span>
-              </div>
-              <h4>21-06-2025</h4>
-            </div>
-            <div class="blog-author">
-              <div class="rounded">
-                <span class="fa fa-user" aria-hidden="true"></span>
-              </div>
-              <h4>Администратор</h4>
-            </div>
+        <div class="main-image"></div>
+      </div>
+    </div>
+
+    <!-- Company description section -->
+    <div class="about-section" id="about-section">
+      <div class="container">
+        <div class="about-contents">
+          <div class="image-about" data-aos="fade-up">
+            <img src="img/resort.jpg" alt="image" />
           </div>
-          <div class="blog-content">
-            <h4>Советы по подготовке к кемпингу</h4>
-            <p>
-              Делимся рекомендациями по экипировке и безопасности, чтобы ваше путешествие прошло идеально.
-            </p>
+          <div class="box-about" data-aos="fade-down">
+            <div class="box-contents">
+              <h2>Мы стараемся для вас!</h2>
+              <p>
+                Наш кемпинг у озера Иссык-Куль предлагает чистый горный воздух и
+                прекрасные виды.
+              </p>
+              <h5>Удобства и уют</h5>
+              <p>
+                Каждая палатка оборудована всем необходимым для комфортного
+                отдыха.
+              </p>
+              <div class="continue-button">
+                <a href="#">Подробнее →</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Review contents section -->
-  <div class="reviews-section" id="reviews">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h3>Отзывы довольных гостей</h3>
-      </div>
-      <div class="review">
-        <div class="image-review" data-aos="fade-down">
-          <img src="img/japan-views.jpg" alt="views image" />
-        </div>
-        <div class="review-box" data-aos="fade-down">
-          <div class="arrow-buttons">
-            <a href="#" class="prev-review">
-              <span class="material-icons-outlined"> navigate_before </span>
-            </a>
-            <a href="#" class="next-review">
-              <span class="material-icons-outlined"> navigate_next </span>
-            </a>
+    <!-- Services section -->
+    <div class="our-services" id="services">
+      <div class="container">
+        <div class="services-contents">
+          <div class="box-description" data-aos="fade-up">
+            <h2>Наши услуги</h2>
+            <p>Мы позаботились о том, чтобы ваше пребывание было комфортным.</p>
+            <div class="services">
+              <div class="services-icon">
+                <h4>
+                  <span class="fa fa-cutlery orange" aria-hidden="true"></span
+                  >Домашняя кухня
+                </h4>
+              </div>
+              <div class="services-icon">
+                <h4>
+                  <span class="fa fa-lock blue" aria-hidden="true"></span
+                  >Безопасность
+                </h4>
+              </div>
+              <div class="services-icon">
+                <h4>
+                  <span class="fa fa-clock-o green" aria-hidden="true"></span
+                  >Быстрый сервис
+                </h4>
+              </div>
+              <div class="services-icon">
+                <h4>
+                  <span
+                    class="fa fa-hourglass-o purple"
+                    aria-hidden="true"
+                  ></span
+                  >24/7 поддержка
+                </h4>
+              </div>
+            </div>
           </div>
-          <div class="review-information">
-            <div class="content-review">
-              <span class="fa fa-quote-left" aria-hidden="true"></span>
-              <p class="italic">
-                Прекрасный кемпинг! Мы отлично провели время и обязательно вернёмся снова.
+          <div class="image-services" data-aos="fade-up">
+            <img src="img/services.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing section -->
+    <div class="best-plans" id="pricing" data-aos="fade-up">
+      <div class="container">
+        <div class="heading-blog">
+          <h2>Цены на аренду палаток</h2>
+          <div class="blog-container">
+            <p>Выберите подходящую палатку для вашего отдыха.</p>
+          </div>
+        </div>
+        <div class="plan-contents">
+          <div class="plan-card" data-aos="fade-down">
+            <img src="img/classic-room-cropped.jpg" alt="single tent" />
+            <div class="plan-content">
+              <h4>Одноместная палатка</h4>
+              <div class="price">
+                <p><span>500 сом</span> за ночь</p>
+              </div>
+              <div class="features">
+                <p>Бесплатный WiFi</p>
+                <p>Завтрак включён</p>
+                <p>1 спальное место</p>
+                <p>Для 1 гостя</p>
+              </div>
+              <div class="select-package">
+                <a href="#">Выбрать</a>
+              </div>
+            </div>
+          </div>
+          <div class="plan-card" data-aos="fade-up">
+            <img src="img/luxury-room-cropped.jpg" alt="double tent" />
+            <div class="plan-content">
+              <h4>Двухместная палатка</h4>
+              <div class="price">
+                <p><span>800 сом</span> за ночь</p>
+              </div>
+              <div class="features">
+                <p>Бесплатный WiFi</p>
+                <p>Завтрак включён</p>
+                <p>2 спальных места</p>
+                <p>Для 2 гостей</p>
+              </div>
+              <div class="select-package">
+                <a href="#">Выбрать</a>
+              </div>
+            </div>
+          </div>
+          <div class="plan-card" data-aos="fade-up">
+            <img src="img/modern-room-cropped.jpg" alt="family tent" />
+            <div class="plan-content">
+              <h4>Семейная палатка</h4>
+              <div class="price">
+                <p><span>1200 сом</span> за ночь</p>
+              </div>
+              <div class="features">
+                <p>Бесплатный WiFi</p>
+                <p>Завтрак включён</p>
+                <p>4 спальных места</p>
+                <p>Для семьи до 4 человек</p>
+              </div>
+              <div class="select-package">
+                <a href="#">Выбрать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog and news section -->
+    <div class="blog-and-news" id="blog-and-news">
+      <div class="container">
+        <div class="heading-blog" data-aos="fade-up">
+          <h2>Наши новости</h2>
+          <div class="blog-container">
+            <p>
+              Следите за событиями нашего кемпинга и полезными советами по
+              отдыху.
+            </p>
+          </div>
+        </div>
+        <div class="blog-contents">
+          <div class="blog" data-aos="fade-down">
+            <img src="img/resort.jpg" alt="resort picture" />
+            <div class="blog-info">
+              <div class="time-posted">
+                <div class="rounded">
+                  <span class="fa fa-calendar" aria-hidden="true"></span>
+                </div>
+                <h4>17-06-2025</h4>
+              </div>
+              <div class="blog-author">
+                <div class="rounded">
+                  <span class="fa fa-user" aria-hidden="true"></span>
+                </div>
+                <h4>Администратор</h4>
+              </div>
+            </div>
+            <div class="blog-content">
+              <h4>Лучшие места отдыха на Иссык-Куле!</h4>
+              <p>
+                Мы собрали список самых живописных уголков побережья для вашего
+                незабываемого отдыха.
               </p>
             </div>
-            <div class="reviewer">
-              <img class="rounded-image" src="img/profile-pic.jpg" alt="reviewer image" />
-              <div class="reviewer-profile">
-                <h4 class="reviewer-name">Olivia Blisset</h4>
-                <p>Довольный гость</p>
+          </div>
+          <div class="blog second" data-aos="fade-up">
+            <img src="img/villa.jpg" alt="villa picture" />
+            <div class="blog-info">
+              <div class="time-posted">
+                <div class="rounded">
+                  <span class="fa fa-calendar" aria-hidden="true"></span>
+                </div>
+                <h4>21-06-2025</h4>
+              </div>
+              <div class="blog-author">
+                <div class="rounded">
+                  <span class="fa fa-user" aria-hidden="true"></span>
+                </div>
+                <h4>Администратор</h4>
               </div>
             </div>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div class="review" style="display:none">
-        <div class="image-review" data-aos="fade-down">
-          <img src="img/resort.jpg" alt="views image" />
-        </div>
-        <div class="review-box" data-aos="fade-down">
-          <div class="arrow-buttons">
-            <a href="#" class="prev-review">
-              <span class="material-icons-outlined"> navigate_before </span>
-            </a>
-            <a href="#" class="next-review">
-              <span class="material-icons-outlined"> navigate_next </span>
-            </a>
-          </div>
-          <div class="review-information">
-            <div class="content-review">
-              <span class="fa fa-quote-left" aria-hidden="true"></span>
-              <p class="italic">
-                Отличный сервис и потрясающий вид на озеро. Всем рекомендую!
+            <div class="blog-content">
+              <h4>Советы по подготовке к кемпингу</h4>
+              <p>
+                Делимся рекомендациями по экипировке и безопасности, чтобы ваше
+                путешествие прошло идеально.
               </p>
             </div>
-            <div class="reviewer">
-              <img class="rounded-image" src="img/profile-pic.jpg" alt="reviewer image" />
-              <div class="reviewer-profile">
-                <h4 class="reviewer-name">Иван Петров</h4>
-                <p>Довольный гость</p>
-              </div>
-            </div>
           </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-      <div class="review" style="display:none">
-        <div class="image-review" data-aos="fade-down">
-          <img src="img/villa.jpg" alt="views image" />
-        </div>
-        <div class="review-box" data-aos="fade-down">
-          <div class="arrow-buttons">
-            <a href="#" class="prev-review">
-              <span class="material-icons-outlined"> navigate_before </span>
-            </a>
-            <a href="#" class="next-review">
-              <span class="material-icons-outlined"> navigate_next </span>
-            </a>
-          </div>
-          <div class="review-information">
-            <div class="content-review">
-              <span class="fa fa-quote-left" aria-hidden="true"></span>
-              <p class="italic">
-                Большие удобные палатки и дружелюбный персонал. Дети в восторге!
-              </p>
-            </div>
-            <div class="reviewer">
-              <img class="rounded-image" src="img/profile-pic.jpg" alt="reviewer image" />
-              <div class="reviewer-profile">
-                <h4 class="reviewer-name">Айбике Турсунова</h4>
-                <p>Довольный гость</p>
-              </div>
-            </div>
-          </div>
-          <div class="clear"></div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Other information section -->
-  <!-- <div class="more-information-section">
+    <!-- Review contents section -->
+    <div class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h3>Отзывы довольных гостей</h3>
+        </div>
+        <div class="review">
+          <div class="image-review" data-aos="fade-down">
+            <img src="img/japan-views.jpg" alt="views image" />
+          </div>
+          <div class="review-box" data-aos="fade-down">
+            <div class="arrow-buttons">
+              <a href="#" class="prev-review">
+                <span class="material-icons-outlined"> navigate_before </span>
+              </a>
+              <a href="#" class="next-review">
+                <span class="material-icons-outlined"> navigate_next </span>
+              </a>
+            </div>
+            <div class="review-information">
+              <div class="content-review">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p class="italic">
+                  Прекрасный кемпинг! Мы отлично провели время и обязательно
+                  вернёмся снова.
+                </p>
+              </div>
+              <div class="reviewer">
+                <img
+                  class="rounded-image"
+                  src="img/profile-pic.jpg"
+                  alt="reviewer image"
+                />
+                <div class="reviewer-profile">
+                  <h4 class="reviewer-name">Olivia Blisset</h4>
+                  <p>Довольный гость</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="review" style="display: none">
+          <div class="image-review" data-aos="fade-down">
+            <img src="img/resort.jpg" alt="views image" />
+          </div>
+          <div class="review-box" data-aos="fade-down">
+            <div class="arrow-buttons">
+              <a href="#" class="prev-review">
+                <span class="material-icons-outlined"> navigate_before </span>
+              </a>
+              <a href="#" class="next-review">
+                <span class="material-icons-outlined"> navigate_next </span>
+              </a>
+            </div>
+            <div class="review-information">
+              <div class="content-review">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p class="italic">
+                  Отличный сервис и потрясающий вид на озеро. Всем рекомендую!
+                </p>
+              </div>
+              <div class="reviewer">
+                <img
+                  class="rounded-image"
+                  src="img/profile-pic.jpg"
+                  alt="reviewer image"
+                />
+                <div class="reviewer-profile">
+                  <h4 class="reviewer-name">Иван Петров</h4>
+                  <p>Довольный гость</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="review" style="display: none">
+          <div class="image-review" data-aos="fade-down">
+            <img src="img/villa.jpg" alt="views image" />
+          </div>
+          <div class="review-box" data-aos="fade-down">
+            <div class="arrow-buttons">
+              <a href="#" class="prev-review">
+                <span class="material-icons-outlined"> navigate_before </span>
+              </a>
+              <a href="#" class="next-review">
+                <span class="material-icons-outlined"> navigate_next </span>
+              </a>
+            </div>
+            <div class="review-information">
+              <div class="content-review">
+                <span class="fa fa-quote-left" aria-hidden="true"></span>
+                <p class="italic">
+                  Большие удобные палатки и дружелюбный персонал. Дети в
+                  восторге!
+                </p>
+              </div>
+              <div class="reviewer">
+                <img
+                  class="rounded-image"
+                  src="img/profile-pic.jpg"
+                  alt="reviewer image"
+                />
+                <div class="reviewer-profile">
+                  <h4 class="reviewer-name">Айбике Турсунова</h4>
+                  <p>Довольный гость</p>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other information section -->
+    <!-- <div class="more-information-section">
     <div class="container">
       <div class="company-info">
         <h4>Issyk-Kul Camp</h4>
@@ -394,27 +434,25 @@
     </div>
   </div> -->
 
-  <!-- Footer section -->
-  <footer>
-    <div class="container">
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/lintangpratama/">
-          <span class="fa fa-linkedin" aria-hidden="true"></span>
-        </a>
-        <a href="https://lintangpratama.medium.com/">
-          <span class="fab fa-medium-m" aria-hidden="true"></span>
-        </a>
-        <a href="https://www.instagram.com/lintangpratama_/">
-          <span class="fa fa-instagram" aria-hidden="true"></span>
-        </a>
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/lintangpratama/">
+            <span class="fa fa-linkedin" aria-hidden="true"></span>
+          </a>
+          <a href="https://lintangpratama.medium.com/">
+            <span class="fab fa-medium-m" aria-hidden="true"></span>
+          </a>
+          <a href="https://www.instagram.com/lintangpratama_/">
+            <span class="fa fa-instagram" aria-hidden="true"></span>
+          </a>
+        </div>
+        <p class="white">© 2024 Issyk-Kul Camp. Все права защищены.</p>
       </div>
-      <p class="white">© 2024 Issyk-Kul Camp. Все права защищены.</p>
-    </div>
-  </footer>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
-
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
