@@ -75,10 +75,17 @@ h5 {
 
 .left-navbar {
   display: flex;
+  align-items: center;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
   display: flex;
+  align-items: center;
   background-color: #fff;
   position: absolute;
   top: 50px;

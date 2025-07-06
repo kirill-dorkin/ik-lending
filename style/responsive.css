@@ -198,7 +198,6 @@
 
   .right-navbar .hamburger {
     display: block;
-    float: right;
   }
 
   .mobile-menu {
@@ -215,14 +214,16 @@
 
   .navbar.responsive .hamburger {
     position: absolute;
-    top: 20px;
+    top: 50%;
     right: 20px;
+    transform: translateY(-50%);
   }
 
   .navbar.responsive a.bookNow {
     position: absolute;
-    top: 21px;
+    top: 50%;
     right: 52px;
+    transform: translateY(-50%);
   }
 
   .navbar.responsive a {
